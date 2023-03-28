@@ -1,7 +1,5 @@
-import validator from './validator.js';
-
+import validator from './validator'
 const tarjeta = document.querySelector('#tarjeta'),
-  inputNum = document.getElementById('inputNumero'),
   btnAbrirFormulario = document.querySelector('#btn-abrir-formulario'),
   formulario = document.querySelector('#formulario-tarjeta'),
   numeroTarjeta = document.querySelector('#tarjeta .numero'),
@@ -28,16 +26,15 @@ const tarjeta = document.querySelector('#tarjeta'),
   }
 
 //Rotación de la tarjeta
-
-  tarjeta.addEventListener('click', () => {
-    tarjeta.classList.toggle('active');
-  });
+tarjeta.addEventListener('click', () => {
+  tarjeta.classList.toggle('active');
+});
 
 //Botón de abrir formulario
-function AbrirFormulario(e){
+btnAbrirFormulario.addEventListener('click', () => {
   btnAbrirFormulario.classList.toggle('active')
   formulario.classList.toggle('active')
-}
+})
 
 //Select de mes generado dinamicamente
 for (let i = 1; i <= 12; i++) {
@@ -57,7 +54,7 @@ for (let i = yearActual; i <= yearActual + 5; i++) {
 }
 
 // * Input número de tarjeta
-function numerTarjeta(e){
+formulario.inputNumero.addEventListener('keyup', (e) => {
   let valorInput = e.target.value;
 
   formulario.inputNumero.value = valorInput
@@ -66,6 +63,7 @@ function numerTarjeta(e){
   //Elimina las letrasç
     .replace(/\D/g, '')
     //Elimina espacio cada 4 números
+    .replace(/([0-9]{4})/g, '$1 ')
     //Elimina el último espaciado
     .trim();
 
@@ -88,14 +86,10 @@ function numerTarjeta(e){
     logoMarca.appendChild(imagen);
   }
 
-  mostrarFrente();
-  oculto(valorInput)
-  validator.isValid(valorInput)
-  return valorInput
-
   //Mostrar tarjeta de frente
-}
-
+  mostrarFrente();
+  validator.isValid(valorInput)
+})
 
 // *Input nombre de tarjeta
 formulario.inputNombre.addEventListener('keyup', (e) =>{
@@ -139,43 +133,16 @@ formulario.inputCCV.addEventListener('keyup', (e) => {
   ccv.textContent = formulario.inputCCV.value
 })
 
-//modal
-function mostrarModal(e) {
-  e.preventDefault()
-  let valorTarjeta = inputNum.value
-  console.log(valorTarjeta)
-  if (validator.isValid(valorTarjeta) === true) {
-    modal.showModal();
-
-  } else {
-    modal_title.textContent= 'Lo siento 😌'
-    modal_text.textContent= 'Tu número de tarjeta es inválido'
-    modal.showModal()
-  }
-}
 
 
-cerrar_modal.addEventListener('click',()=>{
-  modal.close()
-  formulario.reset()
+
+//MODAl
+abrir_modal.addEventListener('click', (e)=>{
+  e.preventDefault();
+  modal.showModal();
 })
 
-
-
- //maskify
- function oculto(valorTarjeta){
-
-   const numeroOculto = validator.maskify(valorTarjeta);
-   numeroTarjeta.textContent = numeroOculto;
-   inputNum.value = numeroOculto
-   console.log(numeroOculto)
-
- }
-
-
-btnAbrirFormulario.addEventListener('toggle', AbrirFormulario())
-formulario.addEventListener('submit', mostrarModal)
-formulario.inputNumero.addEventListener('keyup', numerTarjeta)
-
-//5191732343975393
+cerrar_modal.addEventListener('click', () => {
+  modal.close()
+})
 
