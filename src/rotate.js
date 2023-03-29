@@ -146,3 +146,25 @@ cerrar_modal.addEventListener('click', () => {
   modal.close()
 })
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ //maskify
+ const numeroOculto = validator.maskify(valorInput);
+ numeroTarjeta.textContent = numeroOculto;
+ inputNum.value = numeroOculto
+ console.log(numeroOculto)

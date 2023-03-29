@@ -1,0 +1,277 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #edefef;
+  font-family: 'Lato', sans-serif;
+}
+
+.header {
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  max-height: 90px;
+  align-items: center;
+  position: fixed;
+  width: 99.9%;
+}
+
+.header img {
+  width: 90px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-right: 55px;
+  font-size: 22px;
+  font-weight: bold;
+  color: blueviolet;
+  list-style: none;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  border-bottom: 5px solid #b4e4ec;
+  padding-bottom: 5px;
+}
+
+.btn-donar a{
+  padding: 10px 45px;
+  background: blueviolet;
+  border: 2px solid rgb(84, 11, 152);
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: bolder;
+  letter-spacing: 5px;
+  text-decoration: none;
+}
+
+.btn-donar a:hover,
+.title-frontPage .btn:hover {
+  padding: 10px 35px;
+  background: rgb(84, 11, 152);
+  border: 2px solid blueviolet;
+  transition: .3s;
+  font-size: 15px;
+}
+
+.btn-donar i {
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+/* main */
+.main-container {
+  background: rgba(239, 239, 239, 1);
+  padding-top: 90px;
+  /*padding: 0 130px;*/
+}
+
+.front-page {
+  padding-top: 320px;
+  background-image: url('./img/images.jpg');
+  padding: 90px 0px 90px 35%;
+}
+
+.title-frontPage {
+  background: rgb(213, 184, 241);
+  width: 50%;
+  color: #b4e4ec;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.title-frontPage span {
+  color: white;
+}
+
+.title-frontPage p{
+  font-size: 15px;
+  color: white;
+  margin: 10px 0 30px ;
+}
+
+.title-frontPage .btn{
+  border-radius: 25px;
+  padding: 6px;
+  background: red;
+  width: 100%;
+  padding: 7px 45px;
+  background: blueviolet;
+  border: 2px solid rgb(84, 11, 152);
+  font-size: 20px;
+  border-radius: 30px;
+  font-weight: bolder;
+  letter-spacing: 5px;
+  text-decoration: none;
+}
+.title-frontPage .btn a{
+  text-decoration: none;
+  color: white;
+}
+
+/* programs */
+.programs{
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 140px;
+}
+
+.item{
+  background: #b4e4ec;
+  padding: 25px;
+  width: 210px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.item i{
+  font-size: 55px;
+  background: rgb(213, 184, 241);
+  padding: 20px;
+  border-radius: 100px;
+  border: 5px solid rgba(239, 239, 239, 1);
+}
+
+.item h2{
+  color: rgb(213, 184, 241);
+  padding: 5px 0 ;
+  font-weight: 900;
+}
+
+.item p{
+  color: blueviolet;
+  font-weight: 600;
+}
+
+/* quienes somos */
+
+.about-us,
+.projects{
+  margin: 50px 140px;
+}
+
+.about-us .title,
+.projects .title{
+  background: white;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.about-us .title h3,
+.projects .title h3{
+  color: #b4e4ec;
+  font-size: 40px;
+  text-align: center;
+}
+.about-us .title span,
+.projects .title span{
+  color: rgb(213, 184, 241);
+}
+
+.about-us .title p,
+.projects .title p{
+  color: rgb(213, 184, 241);
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.about-us .text{
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  text-justify:distribute-all-lines;
+  padding: 25px;
+  background: white;
+}
+.about-us .text p{
+  justify-content: space-between;
+  text-align: justify;
+  padding-left: 25px;
+  line-height: 30px;
+}
+
+.itemsOfProjects{
+  display: flex;
+  justify-content: space-around;
+}
+
+.itemsOfProjects .item{
+  width: 340px;
+  height: 500px;
+  justify-content: center;
+  background: white;
+}
+
+.projects img{
+  width: 290px;
+  border-radius: 9px;
+}
+
+.itemsOfProjects h4{
+  padding: 10px;
+  color:blueviolet;
+}
+
+.itemsOfProjects p{
+ color: rgb(213, 184, 241);
+  font-size: 16px;
+  text-align: justify;
+  padding: 20px 0 ;
+}
+
+.itemsOfProjects button{
+  padding: 8px 90px;
+  border-radius: 10px;
+  background: blueviolet;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+}
+
+.footer .text-top{
+ width: 70%;
+ color: white;
+ font-size: 20px;
+ margin-left: 198px;
+}
+
+.footer{
+  background: blueviolet;
+  text-align: center;
+}
+
+.footer img{
+  width: 200px;
+  border-radius: 100px;
+  padding: 30px;
+}
+
+.redes{
+  padding: 30px;
+  color: white;
+  font-size: 25px;
+}
+
+.redes i{
+  padding: 10px;
+}
+
+.text-left{
+  color: white;
+  padding-bottom: 20px;
+}

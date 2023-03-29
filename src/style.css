@@ -19,6 +19,12 @@ body {
 	align-items: center;
 }
 
+.contenedor img{
+  width: 200px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
 .head{
   background: #2db9c9;
   height: 90px;
@@ -39,12 +45,18 @@ body {
 }
 
 .subtitulo{
-  background: #91afb37b;
+  background: blueviolet;
   padding: 25px;
   font-size: 12px;
-  color: rgba(33, 22, 22, 0.655);
+  color: white;
   margin-bottom: 50px;
   border-radius: 10px;
+}
+.subtitulo p{
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 /* ---------- Estilos Generales de las Tarjetas ----------*/
@@ -195,7 +207,7 @@ body {
 	height: 50px;
 	font-size: 20px;
 	line-height: 20px;
-	background: #2db9c9;
+	background: blueviolet;
 	color: #fff;
 	position: relative;
 	top: -25px;
@@ -209,7 +221,7 @@ body {
 }
 
 .contenedor-btn .btn-abrir-formulario:hover {
-	background:#18a2b1;
+	background:rgb(213, 184, 241);
 }
 
 .contenedor-btn .btn-abrir-formulario.active {
@@ -305,17 +317,23 @@ body {
 }
 
 .formulario-tarjeta .btn-enviar {
-	border: none;
-	padding: 10px;
-	font-size: 22px;
-	color: #fff;
-	background: #2db9c9;
-	box-shadow: 2px 2px 10px 0px rgba(0,85,212,0.4);
-	cursor: pointer;
+  padding: 10px 45px;
+  background: blueviolet;
+  border: 2px solid rgb(84, 11, 152);
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: bolder;
+  letter-spacing: 5px;
+  text-decoration: none;
 }
 
 .formulario-tarjeta .btn-enviar:hover {
-	background:#18a2b1;
+	padding: 10px 35px;
+  background: rgb(84, 11, 152);
+  border: 2px solid blueviolet;
+  transition: .3s;
+  font-size: 15px;
 }
 
 .info{
