@@ -30,21 +30,6 @@ Esta pagina web se contruyo usando las siguientes tecnologias:
 * ES6 para organización de código modular
  
 
-## 4. Hito: Criterios de aceptación mínimos del proyecto
-
-**1. Una interfaz que debe permitir a la usuaria:**
-
-* Insertar un numero (texto) que quieres validar. Usa solo caracteres numéricos
-  (dígitos) en la tarjeta a validar [0-9].  
-* Ver si el resultado es válido o no.  
-* Ocultar todos los dígitos del número de tarjeta a exepción de los últimos
-  4 caracteres.  
-**2. Pruebas unitarias de los métodos.**  
-**3. Código de tu proyecto subido a tu repo e interfaz "desplegada".**  
-**4. Un README que contiene una definición del producto.**  
-**. Hito Opcional: Mostrar la franquicia de tarjeta
-
-
 
 
 
