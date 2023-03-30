@@ -10,7 +10,6 @@ const validator = {
         respuesta = true;
       }
     }
-    console.log(respuesta)
     return respuesta;
   },
   maskify: (numeroTarjeta) => {
@@ -40,7 +39,6 @@ function invertirTarjeta(numeroTarjeta) {
   const arrayNumerico = arrayTarjeta.map((numeroString) =>
     Number(numeroString)
   );
-  console.log(arrayNumerico);
   return arrayNumerico
 }
 
@@ -61,7 +59,6 @@ function multiplicarPares(arrayNumerico) {
       }
     }
   }
-  console.log(arrayNumerico)
   return arrayNumerico;
 }
 
@@ -79,7 +76,6 @@ function sumarDigitos(numero) {
   arrayNumero.forEach((element) => {
     acumulador += Number(element);
   });
-  console.log(acumulador)
   return acumulador;
 }
 // sumas los indices de mis arreglos
@@ -88,7 +84,6 @@ function sumarElementosArray(arrayNumerico) {
   arrayNumerico.forEach((element) => {
     total += element;
   });
-  console.log(total)
   return total;
 }
 
