@@ -12,11 +12,7 @@ const tarjeta = document.querySelector('#tarjeta'),
   yearExpiracion = document.querySelector('#tarjeta .year'),
   ccv = document.querySelector('#tarjeta .ccv'),
   cerrar_modal = document.querySelector("#btn-cerrar-modal"),
-  modal = document.querySelector("#modal"),
-  modal_title = document.querySelector(".modal-title"),
-  modal_text = document.querySelector(".modal-text");
-
-
+  modal = document.querySelector("#modal");
 
 
 // * Voltear la tarjeta para mostrar el frente
@@ -147,8 +143,6 @@ function mostrarModal(e) {
     modal.showModal();
 
   } else {
-    modal_title.textContent = 'Lo siento 😌'
-    modal_text.textContent = 'Tu número de tarjeta es inválido'
     modal.showModal()
   }
 }
